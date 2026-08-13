@@ -1,0 +1,13 @@
+/* GENERATED at build time from the canonical schema JSON - do not edit.
+ * Source: @ND_SCHEMA_PATH@
+ *
+ * The schema lives in exactly one file so the firmware and the host-side
+ * rehearsal (tools/needle_tui.py --local) always compile the same grammar.
+ * A drifting copy would give two subtly different behaviours that both look
+ * correct in isolation. */
+#ifndef ND_TOOLS_SCHEMA_H
+#define ND_TOOLS_SCHEMA_H
+
+#define ND_TOOLS_JSON "@ND_SCHEMA_ESC@"
+
+#endif

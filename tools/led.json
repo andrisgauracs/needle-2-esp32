@@ -1,0 +1,1 @@
+[{"name":"set_led","description":"Light the onboard RGB LED","parameters":{"type":"object","properties":{"color":{"type":"string","enum":["red","green","blue","yellow","purple","white"]},"mode":{"type":"string","description":"solid or blink","enum":["solid","flash"]},"duration_seconds":{"type":"number","maximum":30}},"required":["color","mode"]}}]

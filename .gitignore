@@ -1,0 +1,20 @@
+# Model weights: 13.7 MB, fetched from Hugging Face (see README)
+model/
+
+# Upstream Cactus Python package, cloned for reference only
+needle/
+
+# Build output
+build/
+esp32/*/build/
+esp32/*/sdkconfig
+esp32/*/sdkconfig.old
+esp32/*/managed_components/
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# macOS
+.DS_Store
