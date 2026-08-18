@@ -6,9 +6,9 @@ flash; you type a request in a terminal and the board's LED does what you asked.
 
 ![Needle 2 running on an ESP32-S3](needle_demo.gif)
 
-*A plain-English request goes in; the board streams its reasoning, emits a
+*Two requests, back to back. Each one streams its reasoning, emits a
 schema-valid tool call, and drives the onboard RGB LED. Nothing here touches a
-network. The clip is sped up — the real response took 39 s.*
+network. The clip is sped up — each response takes ~40 s on the board.*
 
 This is an independent C99 implementation of the `.cact` inference format —
 about 3,700 lines with no dependencies. It is not derived from Cactus's C++
