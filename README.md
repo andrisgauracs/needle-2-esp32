@@ -4,16 +4,11 @@ A 45M-parameter language model doing grammar-guaranteed tool calling entirely
 on a microcontroller. No network, no cloud. The weights are memory-mapped from
 flash; you type a request in a terminal and the board's LED does what you asked.
 
-```
-› flash red light for two seconds
+![Needle 2 running on an ESP32-S3](needle_demo.gif)
 
-  reasoning   color 'red' from 'red'; mode 'flash' from 'flash';
-              duration_seconds 2 from 'two seconds'
-  tool call   [{"name":"set_led","arguments":{
-                 "color":"red","mode":"flash","duration_seconds":2}}]
-  confidence  ███████████████████░  0.985
-  LED         red · flash · 2.0s
-```
+*A plain-English request goes in; the board streams its reasoning, emits a
+schema-valid tool call, and drives the onboard RGB LED. Nothing here touches a
+network. The clip is sped up — the real response took 39 s.*
 
 This is an independent C99 implementation of the `.cact` inference format —
 about 3,700 lines with no dependencies. It is not derived from Cactus's C++
